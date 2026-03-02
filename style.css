@@ -1,44 +1,13 @@
 body{
-    background-color: rgb(102, 102, 102);
+    background-color:blue;
     margin: 0px;
 }
-.navbarFloat{
-    display: flex;  
-    align-items: center;  
-    background-color:brown;
-    margin: 0px;
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-ul {
-    display: grid;
-    grid-template-columns: repeat(2, 765px);
-    gap: 20px;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
-    align-content: center;
-}
-
-.navbarFloatImg{
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-}
-.navbarTop{
-    display: flex;
-    height: 100px;
-    align-items: center;
-    background-color:rgb(255, 255, 255);
-    gap: 500px;
-}
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-}
-.Corujinha{
-    align-content: center;
-    align-items: center;
-    width: 400px;
-    height: 400px;
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
