@@ -7,8 +7,9 @@
 
 #topo{
     text-align: center;
-    text-decoration-color: blueviolet;
 }
 body{
     background-color: cadetblue;
+    text-align: center;
+    align-items: center;
 }
