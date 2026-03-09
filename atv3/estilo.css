@@ -1,4 +1,9 @@
 #pagina{
-    background-color: aqua;
+    background-color: cadetblue;
     margin: 0;
+}
+
+#topo{
+    text-align: center;
+    text-decoration-color: blueviolet;
 }
