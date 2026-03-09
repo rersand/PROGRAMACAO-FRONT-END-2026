@@ -2,10 +2,13 @@
     background-color: cadetblue;
     margin: 0;
     padding: 0;
-    
+
 }
 
 #topo{
     text-align: center;
     text-decoration-color: blueviolet;
+}
+body{
+    background-color: cadetblue;
 }
