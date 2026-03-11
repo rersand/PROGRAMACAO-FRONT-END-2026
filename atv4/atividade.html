@@ -538,24 +538,24 @@ CON CON
 <section id="form">
 
     <h2>Envie um Fato Inútil</h2>
+    <div style="border-radius: 5px;">
+        <form>
+            <fieldset class="fieldset">
+                <legend class="fieldset-legend">Cadastro de Inutilidades</legend>
 
-    <form>
-        <fieldset class="fieldset">
-            <legend class="fieldset-legend">Cadastro de Inutilidades</legend>
+                <label>Nome:</label>
+                <input type="text" name="nome">
 
-            <label>Nome:</label>
-            <input type="text" name="nome">
+                <label>Fato Inútil:</label>
+                <input type="text" name="fato">
 
-            <label>Fato Inútil:</label>
-            <input type="text" name="fato">
+                <label>Grau de inutilidade (0-10):</label>
+               <input type="number" name="grau" min="0" max="10">
 
-            <label>Grau de inutilidade (0-10):</label>
-            <input type="number" name="grau" min="0" max="10">
-
-            <input type="submit" value="Enviar inutilidade">
-        </fieldset>
-    </form>
-    
+                <input type="submit" value="Enviar inutilidade">
+            </fieldset>
+        </form>
+    </div>    
 </section><br><br><br><br>
  <section id="formulario">
             <h2>Envie sua Curiosidade</h2>
