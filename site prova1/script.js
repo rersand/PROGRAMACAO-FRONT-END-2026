@@ -2,7 +2,7 @@ function mostrarTabela() {
  
     const imgTabela = document.createElement("img");
 
-    imgTabela.src = "site prova1/Tabela_Jogos.jpeg"; 
+    imgTabela.src = "Tabela_Jogos.jpeg"; 
     imgTabela.id = "imagem-tabela";
     imgTabela.alt = "Tabela Oficial de Jogos - Copa do Mundo da FIFA 2026";
 
