@@ -1,9 +1,5 @@
 function mostrarTabela() {
-    if (document.getElementById("imagem-tabela")) {
-        alert("A tabela já está sendo exibida!");
-        return;
-    }
-
+ 
     const imgTabela = document.createElement("img");
 
     imgTabela.src = "Tabela_Jogos.jpg"; 
