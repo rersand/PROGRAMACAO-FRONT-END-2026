@@ -1,5 +1,5 @@
 function revelar(){
-function revelar() {
+
     const imagemCopa = document.querySelector('.card-img-top');
     imagemCopa.src = 'img/_vinicius_junior.png';
 
@@ -29,5 +29,4 @@ function revelar() {
         elemento.classList.remove('placeholder', 'col-4', 'col-6');
         elemento.classList.add('card-text');
     });
-}
 }
