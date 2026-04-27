@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Jogador da Copa do Mundo </title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Meu Jogador da Copa do Mundo</title>
     <style> 
         body, html {
             height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
         .bg-copa {
             background-image: url('img/FIFA-World-Cup-26.jpg');
@@ -19,44 +19,93 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
-        .card {
+
+        .container-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-custom {
+            width: 350px;
             backdrop-filter: blur(5px);
             background-color: rgba(255, 255, 255, 0.9);
-            border: none;
+            border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .card-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        
+        h5 { margin: 10px 0; font-size: 1.25rem; }
+        p { line-height: 1.6; color: #333; }
+        
+        .badge-rank {
+            background-color: #6c757d;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-left: 5px;
+        }
+
+        .btn-revelar {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-revelar:hover { background-color: #0b5ed7; }
+
+        .placeholder-sim {
+            background-color: #e0e0e0;
+            display: inline-block;
+            height: 1em;
+            border-radius: 2px;
+            min-width: 100px;
         }
     </style>
 </head>
 <body>
 
     <div class="bg-copa">
-        <div class="d-flex flex-column align-items-center">       
-            <div class="card" style="width: 22rem;" aria-hidden="true">
-            <img src="img/img_.svg" class="card-img-top" alt="Placeholder Copa">
+        <div class="container-flex">       
+            <div class="card-custom">
+                <img src="img/img_.svg" class="card-img" alt="Placeholder Copa" id="fotoJogador">
             
                 <div class="card-body"> 
-                    <h5 id="Nome" class="card-title placeholder-glow">
-                        <span class="placeholder col-6"></span>
-                        <span id="Rank" class="badge text-bg-secondary">-</span>
+                    <h5 id="Nome">
+                        <span class="placeholder-sim" style="width: 150px;"></span>
+                        <span id="Rank" class="badge-rank">-</span>
                     </h5>
-                    <p class="card-text placeholder-glow">
-                        <span id="Data_Nas" class="placeholder col-4"></span><br>
-                        <span id="Alutra" class="placeholder col-4"></span><br>
-                        <span id="Posição " class="placeholder col-6"></span><br>
+                    <p>
+                        <span id="Data_Nas" class="placeholder-sim" style="width: 120px;"></span><br>
+                        <span id="Alutra" class="placeholder-sim" style="width: 80px;"></span><br>
+                        <span id="Posição " class="placeholder-sim" style="width: 140px;"></span>
                     </p>
-
-                
                 </div>
             </div>
-                <a href="#" onclick="revelar()" tabindex="-1" class="btn btn-primary" style="margin: 10px; padding: 10px;">
+
+            <button onclick="revelar()" class="btn-revelar">
                  Revelar 
-                </a>
+            </button>
         </div>
     </div>
 
-    <script src="js\bootstrap.js"></script>
     <script src="img/script.js"></script>
 </body>
 </html>
