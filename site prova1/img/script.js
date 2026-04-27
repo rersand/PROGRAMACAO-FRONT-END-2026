@@ -1,6 +1,6 @@
 function revelar() {
     const foto = document.getElementById('fotoJogador');
-    if (foto) foto.src = '_vinicius_junior.png';
+    if (foto) foto.src = 'img/_vinicius_junior.png';
 
     const spanNome = document.querySelector('#Nome span:first-child');
     const spanRank = document.getElementById('Rank');
