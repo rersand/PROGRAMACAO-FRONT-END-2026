@@ -1,0 +1,26 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.card.flipped {
+  background-color: #61dafb;
+  transform: rotateY(180deg);
+}
