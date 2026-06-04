@@ -9,7 +9,6 @@ import ReactDOM from 'https://esm.sh/react-dom@18/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
-import './style.css'; // Adicione sua estilização aqui
 
 // Lista de cartas duplicadas (pares)
 const initialCards = [
