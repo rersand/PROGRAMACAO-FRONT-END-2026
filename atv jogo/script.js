@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import React from 'https://esm.sh/react@18';
+import ReactDOM from 'https://esm.sh/react-dom@18/client';
 import './style.css'; // Adicione sua estilização aqui
 
 // Lista de cartas duplicadas (pares)
