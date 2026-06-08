@@ -2,11 +2,9 @@
 import React from 'https://esm.sh/react@18';
 import ReactDOM from 'https://esm.sh/react-dom@18/client';
 
-// Lista de cartas duplicadas (pares)
-// Pegamos as funções do React que o seu HTML importou globalmente
+
 const { useState, useEffect } = React;
 
-// Lista de cartas duplicadas (pares)
 const initialCards = [
   { value: '🐱', id: 1 }, { value: '🐱', id: 2 },
   { value: '🐶', id: 3 }, { value: '🐶', id: 4 },
@@ -19,7 +17,6 @@ function MemoryGame() {
   const [selectedCards, setSelectedCards] = useState([]);
   const [disabled, setDisabled] = useState(false);
 
-  // 1. Inicializa e embaralha o jogo
   const resetGame = () => {
     const shuffledCards = [...initialCards]
       .sort(() => Math.random() - 0.5)
@@ -33,7 +30,6 @@ function MemoryGame() {
     resetGame();
   }, []);
 
-  // 2. Manipula o clique na carta
   const handleCardClick = (index) => {
     if (disabled || cards[index].isFlipped || !cards[index].canMatch) return;
 
@@ -46,7 +42,6 @@ function MemoryGame() {
     setSelectedCards([...selectedCards, { ...newCards[index], index }]);
   };
 
-  // 3. Verifica os pares quando duas cartas são escolhidas
   useEffect(() => {
     if (selectedCards.length === 2) {
       setDisabled(true); 
@@ -100,6 +95,5 @@ function MemoryGame() {
   );
 }
 
-// Renderiza o componente na div root usando o ReactDOM global do seu HTML
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MemoryGame />);
